@@ -1,0 +1,18 @@
+<header class="header">
+  <nav class="nav">
+    <a href="#">
+      <img src="../../../assets/images/juanLogo.png" alt="logo" class="logo">
+    </a>
+
+    <ul class="nav-list" [ngClass]="{'nav-list-active': isMenuOpen}">
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Estrutura</a></li>
+      <li><a href="#">Planos</a></li>
+      <li><a href="#">Consultoria</a></li>
+      <li><a href="#">Contato</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+
+    <mat-icon class="menu-icon" [ngClass]="{'menu-active': isMenuOpen}" (click)="toggleMenu()">{{menuIcon}}</mat-icon>
+  </nav>
+</header>
